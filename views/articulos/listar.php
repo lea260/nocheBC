@@ -16,7 +16,7 @@
   <input type="hidden" value="<?php echo constant('URL'); ?>" id="url">
 
 
-  <h1>Listado articulos</h1>
+  <h1>Listado articulos 02</h1>
 
 
   <?php require 'views/footer.php';?>
