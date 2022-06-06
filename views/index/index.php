@@ -14,7 +14,7 @@
 <body>
 
   <?php require 'views/header.php';?>
-  <h1>pagina principal 12</h1>
+  <h1>pagina principal uwu</h1>
   <input type="hidden" value="<?php echo constant('URL'); ?>" id="url">
 
 
