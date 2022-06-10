@@ -10,9 +10,9 @@ class Articulos_Controller extends Controller
     }
 
     //base+
-    public function render()
+    public function listar()
     {
-        //$alumnos = $this->model->get();
+        $alumnos = $this->model->listar();
         $this->view->alumnos = "cargado";
         $this->view->render('login/index');
     }
