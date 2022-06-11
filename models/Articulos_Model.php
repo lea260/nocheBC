@@ -11,7 +11,7 @@ class Articulos_Model extends Model
         parent::__construct();
     }
 
-    public function listar()
+    public function get()
     {
         //define un arreglo en php
         //$items = array();
