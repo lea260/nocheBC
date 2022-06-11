@@ -19,7 +19,7 @@ class Articulos_Controller extends Controller
     public function listar()
     {
         $this->view->lista = $this->model->listar();
-        $this->view->lista = ["articulo01", "articulo02"];
+        //$this->view->lista = ["articulo01", "articulo02"];
         $this->view->render('articulos/listar');
     }
 
