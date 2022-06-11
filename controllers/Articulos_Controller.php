@@ -10,16 +10,16 @@ class Articulos_Controller extends Controller
     }
 
     //base+
-    public function listar()
+    public function render()
     {
-        $alumnos = $this->model->listar();
+        $alumnos             = $this->model->listar();
         $this->view->alumnos = "cargado";
         $this->view->render('login/index');
     }
     public function listar()
     {
         $this->view->lista = $this->model->listar();
-        $this->view->lista = ["articulo01", "articulo02"];
+        //$this->view->lista = ["articulo01", "articulo02"];
         $this->view->render('articulos/listar');
     }
 
