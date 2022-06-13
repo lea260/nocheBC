@@ -13,14 +13,14 @@ class Articulos_Controller extends Controller
     public function render()
     {
         //$alumnos             = $this->model->listar();
-        $this->view->alumnos = "cargado";
+        //$this->view->alumnos = "cargado";
         $this->view->render('login/index');
     }
 
     public function nuevo()
     {
-        //$alumnos             = $this->model->listar();
-        $this->view->alumnos = "cargado";
+        // $alumnos             = $this->model->listar();
+        //$this->view->alumnos = "cargado";
         $this->view->render('articulos/nuevo');
     }
 
