@@ -16,6 +16,13 @@ class Articulos_Controller extends Controller
         $this->view->alumnos = "cargado";
         $this->view->render('login/index');
     }
+
+    public function nuevo()
+    {
+        //$alumnos = $this->model->get();
+        $this->view->alumnos = "cargado";
+        $this->view->render('articulos/nuevo');
+    }
     public function listar()
     {
         $this->view->lista = $this->model->listar();
