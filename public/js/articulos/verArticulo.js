@@ -1,6 +1,7 @@
 (function ($, param) {
   $(document).ready(function () {
     //alert("fff");
+    //linea
     //console.log("funciona ver articulo");
     $("#btnEliminar").click(function (e) {
       e.preventDefault();
