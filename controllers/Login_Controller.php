@@ -51,6 +51,17 @@ class Login_Controller extends Controller
 
     }
 
+    public function test()
+    {
+        $pwd              = '1234';
+        $hash             = password_hash($pwd, PASSWORD_BCRYPT, ['cost' => 10]);
+        $this->view->hash = $hash;
+        $res              = password_verify($pwd, $hash);
+        $this->view->res  = $res;
+        $this->view->render('login/test');
+
+    }
+
     public function login()
     {
         $this->view->render('login/login');
