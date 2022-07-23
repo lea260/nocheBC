@@ -96,13 +96,12 @@ class Articulos_Model extends Model
 
     public function crear($articulo)
     {
-
         $pdo = $this->db->connect();
         try {
             $query = $pdo->prepare('insert into productos
             (codigo, descripcion,precio, fecha)
-            values (:codigo, :descripcion, :precio, :fecha)');
-            $query->bindParam(':codigo', $articulo->codigo);
+            values (:pepito, :descripcion, :precio, :fecha)');
+            $query->bindParam(':pepito', $articulo->codigo);
             $query->bindParam(':descripcion', $articulo->descripcion);
             $query->bindParam(':precio', $articulo->precio);
             $query->bindParam(':fecha', $articulo->fecha);
