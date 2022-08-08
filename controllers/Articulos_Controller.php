@@ -9,7 +9,7 @@ class Articulos_Controller extends Controller
         $this->view->resultadoLogin = "";
     }
 
-    //base+login
+    //base+articulos
     public function render()
     {
         //$alumnos = $this->model->get();
@@ -33,7 +33,7 @@ class Articulos_Controller extends Controller
         $this->view->listar = $articulos;
         //lista los articulos
         $this->view->render('articulos/listar');
-        $arr = [];
+        //$arr = [];
     } //end listar
 
     public function crear()
@@ -49,18 +49,14 @@ class Articulos_Controller extends Controller
         $articulo->precio      = $precio;
         $articulo->fecha       = $fecha;
 
-        $resultado = $this->model->crear($articulo);
-        //id
-        $ruta = "";
-
-        $pathImg = $_FILES['img']['tmp_name'];
-        $tmpName = $_FILES['img']['name'];
-        $array   = explode(".", $tmpName);
-        $ext     = $array[count($array) - 1];
-        $ruta    = 'public/imagenes/articulos/' . $resultado . "." . $ext;
+        $id                    = $this->model->crear($articulo);
+        $this->view->resultado = $id;
+        $pathImg               = $_FILES['img']['tmp_name'];
+        $tmpName               = $_FILES['img']['name'];
+        $array                 = explode(".", $tmpName);
+        $ext                   = $array[count($array) - 1];
+        $ruta                  = 'public/imagenes/articulos/' . $id . "." . $ext;
         move_uploaded_file($pathImg, $ruta);
-
-        $this->view->resultado = $resultado;
 
         $this->view->render('articulos/crear');
 
