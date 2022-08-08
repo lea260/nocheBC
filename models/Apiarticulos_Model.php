@@ -99,7 +99,7 @@ class Apiarticulos_Model extends Model
 
         $pdo = $this->db->connect();
         try {
-            $query = $pdo->prepare('insert into productos
+            $query = $pdo->prepare('INSERT into productos
             (codigo, descripcion,precio, fecha)
             values (:codigo, :descripcion, :precio, :fecha)');
             $query->bindParam(':codigo', $articulo->codigo);
