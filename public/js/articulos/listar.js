@@ -22,7 +22,8 @@
       dataType: "json",
     })
       .done(function (data) {
-        $listaArticulos = data.datos;
+        $listaArticulos = data.lista;
+        console.log($listaArticulos);
       })
       .fail(function (jqXHR, textStatus, errorThrown) {
         console.log(textStatus);
