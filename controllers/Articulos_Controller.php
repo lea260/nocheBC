@@ -29,8 +29,10 @@ class Articulos_Controller extends Controller
 
         //obtiene todos los articulos
         $articulos = $this->model->listar();
+
         //lo asigna a la varible articulos
         $this->view->listar = $articulos;
+
         //lista los articulos
         $this->view->render('articulos/listar');
         //$arr = [];
@@ -49,7 +51,8 @@ class Articulos_Controller extends Controller
         $articulo->precio      = $precio;
         $articulo->fecha       = $fecha;
 
-        $id                    = $this->model->crear($articulo);
+        $id = $this->model->crear($articulo);
+
         $this->view->resultado = $id;
         $pathImg               = $_FILES['img']['tmp_name'];
         $tmpName               = $_FILES['img']['name'];
