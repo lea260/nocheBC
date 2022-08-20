@@ -1,0 +1,92 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  overflow: hidden;
+  background: url(../../Imagenes/log1.jpg);
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+footer {
+  background: rgb(255, 255, 255);
+  position: absolute;
+  bottom: 0%;
+  width: 100%;
+  height: 75px;
+  left: 0%;
+  border-radius: 3%;
+  box-shadow: 6px 2px 2px 3px rgba(0, 0, 0, 0.311);
+}
+
+.login_sec {
+  background: rgb(235, 235, 235);
+  height: 100vh;
+  width: 40vh;
+  text-align: center;
+  margin: 20%;
+  padding: 5px 5px 5px;
+  margin-top: 0;
+  border-radius: 3%;
+  box-shadow: 6px 2px 2px rgba(0, 0, 0, 0.311);
+
+}
+
+h1 {
+  margin-bottom: 30px;
+  font-size: 35px;
+
+}
+
+a {
+  text-decoration: none;
+  color: black;
+
+}
+
+a:hover {
+  color: rgb(230, 207, 35);
+  transition: .2s;
+}
+
+.reg {
+  text-align: center;
+  border-radius: 4px;
+
+}
+
+input {
+  display: block;
+  margin: auto;
+  font-size: 22px;
+  margin-bottom: 30px;
+  border-radius: 4px black;
+  border: none;
+  padding-bottom: 4px;
+  text-align: left;
+  color: whitesmoke;
+  border-radius: 3%;
+  color: black;
+
+}
+
+button {
+  background-color: whitesmoke;
+  display: block;
+  margin: auto;
+  font-size: 22px;
+  margin-bottom: 40px;
+  border-radius: 4px;
+  border: none;
+  width: 270px;
+  padding: 4px;
+  border-radius: 3%;
+}
+
+button:hover {
+  color: rgb(230, 207, 35);
+  transition: .2s;
+}
