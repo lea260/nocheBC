@@ -56,7 +56,7 @@
 
 
   <!-- importo el javascript-->
-  <script src=" <?php echo constant('URL'); ?>public/js/articulos/listar.js">
+  <script src="<?php echo constant('URL'); ?>public/js/articulos/listar.js">
   </script>
   <!--<script src="<?php echo constant('URL'); ?>/public/js/main.js"></script> -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js"
