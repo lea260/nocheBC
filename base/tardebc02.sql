@@ -85,6 +85,8 @@ INSERT INTO `productos` (`id_productos`, `codigo`, `descripcion`, `precio`, `fec
 -- Table structure for table `usuarios`
 --
 
+-- Santiago estuvo aqui.
+
 DROP TABLE IF EXISTS `usuarios`;
 CREATE TABLE `usuarios` (
   `id` int(11) NOT NULL,
