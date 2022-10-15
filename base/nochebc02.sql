@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1:3307
--- Generation Time: Sep 04, 2022 at 06:32 AM
+-- Generation Time: Oct 15, 2022 at 03:37 AM
 -- Server version: 10.4.22-MariaDB
 -- PHP Version: 7.4.27
 
@@ -12,16 +12,16 @@ START TRANSACTION;
 SET time_zone = "+00:00";
 
 
+
 /*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
 /*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
 /*!40101 SET @OLD_COLLATION_CONNECTION=@@COLLATION_CONNECTION */;
 /*!40101 SET NAMES utf8mb4 */;
 
+
 --
--- Database: `tardebc`
---
-CREATE DATABASE IF NOT EXISTS `tardebc` DEFAULT CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci;
-USE `tardebc`;
+CREATE DATABASE IF NOT EXISTS `nochebc02` DEFAULT CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci;
+USE `nochebc02`;
 
 -- --------------------------------------------------------
 
@@ -41,9 +41,6 @@ CREATE TABLE `item` (
 --
 -- Dumping data for table `item`
 --
-
-
-
 -- --------------------------------------------------------
 
 --
@@ -57,17 +54,7 @@ CREATE TABLE `pedido` (
   `fecha` datetime NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
---
--- Dumping data for table `pedido`
---
 
-
-
--- --------------------------------------------------------
-
---
--- Table structure for table `productos`
---
 
 DROP TABLE IF EXISTS `productos`;
 CREATE TABLE `productos` (
@@ -83,13 +70,12 @@ CREATE TABLE `productos` (
 -- Dumping data for table `productos`
 --
 
-INSERT INTO `productos` (`id_productos`, `codigo`, `descripcion`, `precio`, `fecha`, `url`) VALUES
-(1, 'codigo01editadoh', 'descripcion26editado', '26.00', '2021-09-15', ''),
-(2, 'co444444', 'descripcion editada', '20.90', '2013-08-15', ''),
-(5, 'cod04', 'descripcion 03', '2.00', '2020-02-28', ''),
-(6, 'cod06', 'desc3', '23.30', '2012-12-30', ''),
-(9, 'prefijocodigo03', 'descripcion26', '26.00', '2013-12-29', ''),
-(11, 'codigo12', 'descripcion26', '26.00', '2013-12-29', '');
+INSERT INTO `productos` (`id_productos`, `codigo`, `descripcion`, `precio`, `fecha`, `url`) VALUES(1, 'codigo01editadoh', 'descripcion26editado', '26.00', '2021-09-15', '');
+INSERT INTO `productos` (`id_productos`, `codigo`, `descripcion`, `precio`, `fecha`, `url`) VALUES(2, 'co444444', 'descripcion editada', '20.90', '2013-08-15', '');
+INSERT INTO `productos` (`id_productos`, `codigo`, `descripcion`, `precio`, `fecha`, `url`) VALUES(5, 'cod04', 'descripcion 03', '2.00', '2020-02-28', '');
+INSERT INTO `productos` (`id_productos`, `codigo`, `descripcion`, `precio`, `fecha`, `url`) VALUES(6, 'cod06', 'desc3', '23.30', '2012-12-30', '');
+INSERT INTO `productos` (`id_productos`, `codigo`, `descripcion`, `precio`, `fecha`, `url`) VALUES(9, 'prefijocodigo03', 'descripcion26', '26.00', '2013-12-29', '');
+INSERT INTO `productos` (`id_productos`, `codigo`, `descripcion`, `precio`, `fecha`, `url`) VALUES(11, 'codigo12', 'descripcion26', '26.00', '2013-12-29', '');
 
 -- --------------------------------------------------------
 
@@ -108,10 +94,9 @@ CREATE TABLE `usuarios` (
 -- Dumping data for table `usuarios`
 --
 
-INSERT INTO `usuarios` (`id`, `nombre`, `password`) VALUES
-(1, 'juan', '1234'),
-(2, 'pedro', '1234'),
-(3, 'rodrigo', '1234');
+INSERT INTO `usuarios` (`id`, `nombre`, `password`) VALUES(1, 'juan', '1234');
+INSERT INTO `usuarios` (`id`, `nombre`, `password`) VALUES(2, 'pedro', '1234');
+INSERT INTO `usuarios` (`id`, `nombre`, `password`) VALUES(3, 'rodrigo', '1234');
 
 --
 -- Indexes for dumped tables
@@ -154,13 +139,13 @@ ALTER TABLE `usuarios`
 -- AUTO_INCREMENT for table `item`
 --
 ALTER TABLE `item`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=167;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=179;
 
 --
 -- AUTO_INCREMENT for table `pedido`
 --
 ALTER TABLE `pedido`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=105;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=112;
 
 --
 -- AUTO_INCREMENT for table `productos`

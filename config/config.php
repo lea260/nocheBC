@@ -1,12 +1,12 @@
 <?php
 
 //define('URL', 'http://localhost/mvc/');
-define('URL', 'http://' . $_SERVER['HTTP_HOST'] . '/tardeBC/');
+define('URL', 'http://' . $_SERVER['HTTP_HOST'] . '/nocheBC/');
 
 //conexion a la base de datos
 define('HOST', 'localhost');
 define('PORT', '3307');
-define('DB', 'tardebc');
+define('DB', 'nochebc02');
 define('USER', 'root');
 define('PASSWORD', '');
 define('CHARSET', 'utf8mb4');
