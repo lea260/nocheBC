@@ -12,12 +12,12 @@ class Database
 
     public function __construct()
     {
-        $this->host     = constant('HOST');
-        $this->port     = constant('PORT');
-        $this->db       = constant('DB');
-        $this->user     = constant('USER');
+        $this->host = constant('HOST');
+        $this->port = constant('PORT');
+        $this->db = constant('DB');
+        $this->user = constant('USER');
         $this->password = constant('PASSWORD');
-        $this->charset  = constant('CHARSET');
+        $this->charset = constant('CHARSET');
     }
 
     public function connect()
@@ -26,7 +26,7 @@ class Database
         try {
 
             $connection = "mysql:host=" . $this->host . ";port=" . $this->port . ";dbname=" . $this->db . ";charset=" . $this->charset;
-            $options    = [
+            $options = [
                 PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION,
                 PDO::ATTR_EMULATE_PREPARES => false,
             ];

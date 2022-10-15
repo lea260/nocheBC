@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1:3307
--- Generation Time: Aug 16, 2022 at 12:25 AM
+-- Generation Time: Aug 15, 2022 at 08:00 PM
 -- Server version: 10.4.22-MariaDB
 -- PHP Version: 7.4.27
 
@@ -20,8 +20,8 @@ SET time_zone = "+00:00";
 --
 -- Database: `tardebc`
 --
-CREATE DATABASE IF NOT EXISTS `nochebc` DEFAULT CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci;
-USE `nochebc`;
+CREATE DATABASE IF NOT EXISTS `tardebc` DEFAULT CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci;
+USE `tardebc`;
 
 -- --------------------------------------------------------
 
@@ -29,6 +29,7 @@ USE `nochebc`;
 -- Table structure for table `productos`
 --
 
+DROP TABLE IF EXISTS `productos`;
 CREATE TABLE `productos` (
   `id_productos` int(11) NOT NULL,
   `codigo` varchar(45) COLLATE utf8mb4_unicode_ci NOT NULL,

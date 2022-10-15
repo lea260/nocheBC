@@ -5,12 +5,11 @@ class Idioma_Controller extends Controller
     public function __construct()
     {
 
-        $cambio = "a eliminar";
         parent::__construct();
         $this->view->mensaje = "";
     }
 
-    //http://localhost/prophp3bj/proyectoPHPComun/articulos
+    //http://localhost/tardeBC/idioma
     public function render()
     {
         $this->view->render('idioma/index');

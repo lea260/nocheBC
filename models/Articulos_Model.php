@@ -8,7 +8,6 @@ class Articulos_Model extends Model
 
     public function __construct()
     {
-
         parent::__construct();
     }
 
@@ -151,34 +150,5 @@ class Articulos_Model extends Model
             $pdo = null;
         }
     } //end eliminar
-
-    public function search($search)
-    {
-        $articulo = null;
-        $pdo      = $this->db->connect();
-
-        try {
-            $query = $pdo->prepare('SELECT codigo, descripcion FROM productos WHERE descripcion LIKE :textostr');
-            // $query = '%' . $search . '%';
-            $term = "%$search%";
-
-            //$query
-            //$query->bindParam(':textostr', '%' . $search . '%');
-            $query->bindParam(':textostr', $term, PDO::PARAM_STR);
-            //$query->execute(['nombre' => $nombre]);
-            $query->execute();
-            while ($row = $query->fetch()) {
-                $articulo              = new Articulo();
-                $articulo->codigo      = $row['codigo'];
-                $articulo->descripcion = $row['descripcion'];
-
-            }
-        } catch (PDOException $e) {
-            var_dump($e);
-        } finally {
-            $pdo = null;
-        }
-        return $articulo;
-    } //end ver
 
 }

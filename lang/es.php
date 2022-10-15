@@ -1,8 +1,8 @@
 <?php
 
 return [
-    'home' => 'Inicio',
+    'home' => 'inicio brand',
     'articles' => 'articulos',
-    'articles_list' => 'Articlulos list',
-    'cart' => 'Cart',
+    'articles_list' => 'contacto',
+    'cart' => 'carrito',
 ];
