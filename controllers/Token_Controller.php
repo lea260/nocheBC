@@ -23,8 +23,9 @@ class Token_Controller extends Controller
         try {
             //code..
             $data = ["usuario_id" => 5,
-                "rol" => "admin"];
-            $jwt = Jwts::GenerarTk($data);
+                "rol" => "cliente"];
+            $jwt               = Jwts::GenerarTk($data);
+            $_SESSION['token'] = $jwt;
             echo $jwt;
             $decoded = JWT::decode($jwt, new Key(Jwts::$secret_key, 'HS256'));
             //print_r($decoded);
@@ -39,7 +40,9 @@ class Token_Controller extends Controller
     public function test()
     {
         try {
-            $tk   = 'eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE2NjUyNTQ3OTcsImRhdGEiOnsidXN1YXJpb19pZCI6NSwicm9sIjoiYWRtaW4ifSwiaWlzIjoibG9jYWxob3N0In0.FpVxaiyaR7PaL3185wM8F1UuRMMeuflGi6LCmi-rpJI';
+            $tk = $_SESSION['token'];
+
+            //$tk   = 'eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE2NjYwNDk3NjYsImRhdGEiOnsidXN1YXJpb19pZCI6NSwicm9sIjoiYWRtaW4ifSwiaWlzIjoibG9jYWxob3N0In0.5DRxj1u_TgEslKuMhDcm9FvyZ10CJuJbg5KzbnKWrTI';
             $data = Jwts::value($tk);
             print_r($data->data);
         } catch (Exception $th) {
