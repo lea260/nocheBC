@@ -37,4 +37,13 @@ class Articulos_Controller extends Controller
         $this->view->render('articulos/listar');
     }
 
+    public function verArticulo($param)
+    {
+        $id = $param[0];
+        //$this->view->lista = $this->model->listar();
+        //$this->view->lista = ["articulo01", "articulo02"];
+        echo $id;
+        //$this->view->render('articulos/listar');
+    }
+
 }
