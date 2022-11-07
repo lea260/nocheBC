@@ -5,8 +5,7 @@ class Articulos_Controller extends Controller
     public function __construct()
     {
         parent::__construct();
-        $this->view->mensaje        = "";
-        $this->view->resultadoLogin = "";
+        $this->view->mensaje = "";
     }
 
     //base+
