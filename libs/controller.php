@@ -1,5 +1,16 @@
 <?php
 
+require_once 'traduccion/Translate.php';
+use \SimpleTranslation\Translate;
+
+//require_once 'config/config.php';
+
+/*manejo de ccookies */
+//var_dump(constant('URL'));
+
+$idioma = $_COOKIE['idioma'] ?? "es";
+Translate::init($idioma, "lang/" . $idioma . ".php");
+
 //require_once 'config/config.php';
 
 /*manejo de ccookies */
