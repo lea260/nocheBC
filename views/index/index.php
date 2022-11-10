@@ -23,7 +23,7 @@
 
 
   <!-- importo el javascript-->
-  <script src="<?php echo constant('URL'); ?>public/js/main.js"></script>
+  <!--<script src="<?php echo constant('URL'); ?>public/js/main.js"></script>-->
 
 </body>
 
