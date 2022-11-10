@@ -15,5 +15,4 @@ RUN echo "ServerName localhost" >> /etc/apache2/apache2.conf &&\
     a2dissite 000-default &&\
     a2ensite my-site &&\
     service apache2 restart
-EXPOSE 80
 EXPOSE 443
