@@ -2,3 +2,5 @@
 public/imagenes/*
 vendor/*
 config/secrets.php
+.env
+controllers/Dot_Controller.php
