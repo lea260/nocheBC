@@ -97,7 +97,8 @@ class Articulos_Model extends Model
     public function crear($articulo)
     {
 
-        $pdo = $this->db->connect();
+        $pdo          = $this->db->connect();
+        $lastInsertId = -1;
         try {
             $query = $pdo->prepare('insert into productos
             (codigo, descripcion,precio, fecha)
@@ -116,12 +117,13 @@ class Articulos_Model extends Model
                 //echo $consulta->errorInfo()[2];
             }
             //$query->close();
-            return $lastInsertId;
+
         } catch (PDOException $e) {
             return -1;
         } finally {
             $pdo = null;
         }
+        return $lastInsertId;
     } //end crear
 
     public function eliminar($id)

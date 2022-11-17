@@ -23,19 +23,19 @@ class Database
         //$dotenv->load();
         //var_dump($_ENV);
 
-        /*$this->host     = constant('HOST');
+        $this->host     = constant('HOST');
         $this->port     = constant('PORT_DB');
         $this->db       = constant('DB');
         $this->user     = constant('USER');
         $this->password = constant('PASSWORD');
-        $this->charset  = constant('CHARSET');*/
+        $this->charset  = constant('CHARSET');
 
-        $this->host     = $_ENV['HOST'];
-        $this->port     = $_ENV['PORT_DB'];
-        $this->db       = $_ENV['DB'];
-        $this->user     = $_ENV['USER'];
-        $this->password = $_ENV['PASSWORD'];
-        $this->charset  = $_ENV['CHARSET'];
+        /*$this->host     = $_ENV['HOST'];
+    $this->port     = $_ENV['PORT_DB'];
+    $this->db       = $_ENV['DB'];
+    $this->user     = $_ENV['USER'];
+    $this->password = $_ENV['PASSWORD'];
+    $this->charset  = $_ENV['CHARSET'];*/
     }
 
     public function connect()

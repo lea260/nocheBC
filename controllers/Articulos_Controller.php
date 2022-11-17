@@ -1,5 +1,6 @@
 <?php
 
+require_once 'entidades/articulo.php';
 class Articulos_Controller extends Controller
 {
     public function __construct()
@@ -57,7 +58,7 @@ class Articulos_Controller extends Controller
         $ext                   = $array[count($array) - 1];
         $ruta                  = 'public/imagenes/articulos/' . $id . "." . $ext;
         move_uploaded_file($pathImg, $ruta);
-
+/* articulo creado con exito */
         $this->view->render('articulos/crear');
 
     } //end crear
