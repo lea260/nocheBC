@@ -25,12 +25,7 @@ class Login_Controller extends Controller
         $pass       = $_POST['pass'];
         $exitoLogin = $this->model->ingresar($nombre, $pass);
         if ($exitoLogin) {
-            $token = Auth::SignIn([
-                'id' => 1,
-                'name' => $nombre,
-                'role' => 'cliente',
-            ]);
-            $this->view->token        = $token;
+
             $_SESSION["estalogueado"] = true;
             $_SESSION["nombre"]       = $nombre;
             $_SESSION["rol"]          = "cliente";
@@ -45,7 +40,8 @@ class Login_Controller extends Controller
     {
         //$_SESSION["estalogueado"] = false;
         unset($_SESSION["estalogueado"]);
-        unset($_SESSION["nombre"]);
+        unset($_SESSION["estalogueado"]);
+        unset($_SESSION["rol"]);
         session_destroy();
         $this->view->render('index/index');
     }

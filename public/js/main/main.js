@@ -1,7 +1,9 @@
 (function ($) {
   $(document).ready(function () {
-    /*
-    let carrito = JSON.parse(localStorage.getItem("carrito"));  
+    //alert('hola');
+    //console.log("funciona ver articulo");
+    let carrito = JSON.parse(localStorage.getItem("carrito"));
+    //console.log("probando");
     if (carrito) {
       $("#cantidadElemCarrito").text(carrito.length);
     }
@@ -12,6 +14,6 @@
     } else {
       idiomaAux = idioma;
     }
-    document.documentElement.setAttribute("lang", idiomaAux);*/
+    document.documentElement.setAttribute("lang", idiomaAux);
   }); //end ready
 })(jQuery);
