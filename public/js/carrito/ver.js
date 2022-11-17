@@ -84,7 +84,7 @@
         console.log(data);
         console.log("exito");
         //
-        carritoId;
+        //carritoId;
         $("#carritoId").html(`<div id="carritoId"><p>
         ${data.Mensage} id: ${id}  </p></div>`);
         localStorage.setItem("carrito", JSON.stringify([]));

@@ -18,20 +18,20 @@ class Database
          *
          */
 
-        $path   = dirname(__FILE__) . '/../';
-        $dotenv = Dotenv\Dotenv::createImmutable($path);
-        $dotenv->load();
+        //$path   = dirname(dirname(__FILE__));
+        //$dotenv = Dotenv\Dotenv::createImmutable($path);
+        //$dotenv->load();
         //var_dump($_ENV);
 
         /*$this->host     = constant('HOST');
-        $this->port     = constant('PORT');
+        $this->port     = constant('PORT_DB');
         $this->db       = constant('DB');
         $this->user     = constant('USER');
         $this->password = constant('PASSWORD');
-        $this->charset  = constant('CHARSET');
-         */
+        $this->charset  = constant('CHARSET');*/
+
         $this->host     = $_ENV['HOST'];
-        $this->port     = $_ENV['PORT'];
+        $this->port     = $_ENV['PORT_DB'];
         $this->db       = $_ENV['DB'];
         $this->user     = $_ENV['USER'];
         $this->password = $_ENV['PASSWORD'];

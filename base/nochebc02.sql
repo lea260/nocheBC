@@ -74,7 +74,7 @@ INSERT INTO `productos` (`id_productos`, `codigo`, `descripcion`, `precio`, `fec
 INSERT INTO `productos` (`id_productos`, `codigo`, `descripcion`, `precio`, `fecha`, `url`) VALUES(2, 'co444444', 'descripcion editada', '20.90', '2013-08-15', '');
 INSERT INTO `productos` (`id_productos`, `codigo`, `descripcion`, `precio`, `fecha`, `url`) VALUES(5, 'cod04', 'descripcion 03', '2.00', '2020-02-28', '');
 INSERT INTO `productos` (`id_productos`, `codigo`, `descripcion`, `precio`, `fecha`, `url`) VALUES(6, 'cod06', 'desc3', '23.30', '2012-12-30', '');
-INSERT INTO `productos` (`id_productos`, `codigo`, `descripcion`, `precio`, `fecha`, `url`) VALUES(9, 'prefijocodigo03', 'descripcion26', '26.00', '2013-12-29', '');
+INSERT INTO `productos` (`id_productos`, `codigo`, `descripcion`, `precio`, `fecha`7, `url`) VALUES(9, 'prefijocodigo03', 'descripcion26', '26.00', '2013-12-29', '');
 INSERT INTO `productos` (`id_productos`, `codigo`, `descripcion`, `precio`, `fecha`, `url`) VALUES(11, 'codigo12', 'descripcion26', '26.00', '2013-12-29', '');
 
 -- --------------------------------------------------------
